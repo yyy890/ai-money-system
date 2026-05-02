@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI自动赚钱系统 v2.0 - 15个机器人每月躺赚$3000+</title>
+    <meta name="description" content="零代码、零囤货、零发货，全程自动化运行。从内容套利到虚拟产品售卖，15条管道同时出水。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            padding: 18px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin-top: -50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .price-card {
+            border: 3px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        
+        .price-card.featured {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .price {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .price-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .price-card.featured li {
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        
+        .testimonials {
+            margin: 60px 0;
+        }
+        
+        .testimonial {
+            background: #f5f7fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .testimonial .author {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 15px;
+        }
+        
+        .guarantee {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .guarantee h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🤖 我用AI搭了15个自动赚钱机器人</h1>
+            <p class="subtitle">现在每月躺赚$3000+ 💰</p>
+            <p style="font-size: 1.2em; margin-top: 20px;">
+                零代码、零囤货、零发货，全程自动化运行<br>
+                从内容套利到虚拟产品售卖，15条管道同时出水<br>
+                <strong>最疯狂的是：设置一次，持续收钱</strong>
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn btn-primary">立即购买 💎</a>
+                <a href="#features" class="btn btn-secondary">了解更多 📖</a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <section id="features">
+                <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">💰 5大赚钱渠道，15个自动化机器人</h2>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>💸 信息差套利</h3>
+                        <p><strong>月收入潜力: $500-1500</strong></p>
+                        <p>国外爆火内容 → AI自动翻译 → 分发到中文平台 → 积累流量 → 变现</p>
+                        <ul style="margin-top: 15px; list-style: none;">
+                            <li>✅ Twitter/Reddit → 小红书/即刻</li>
+                            <li>✅ ProductHunt → 即刻/知乎</li>
+                            <li>✅ GitHub → 掘金/CSDN</li>
+                            <li>✅ 社交媒体套利</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>🎥 内容搬运变现</h3>
+                        <p><strong>月收入潜力: $800-2000</strong></p>
+                        <p>YouTube爆款视频 → 自动下载+AI配音+字幕 → B站发布 → 流量变现</p>
+                        <ul style="margin-top: 15px; list-style: none;">
+                            <li>✅ YouTube → B站（自动配音）</li>
+                            <li>✅ TikTok加密内容搬运</li>
+                            <li>✅ 营销素材自动生成</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>💎 加密货币监控</h3>
+                        <p><strong>月收入潜力: $1000-3000</strong></p>
+                        <p>实时监控链上数据 → 发现异动信号 → 自动推送 → 抓住机会</p>
+                        <ul style="margin-top: 15px; list-style: none;">
+                            <li>✅ Meme币异动监控</li>
+                            <li>✅ 聪明钱追踪</li>
+                            <li>✅ 空投监控</li>
+                            <li>✅ Polymarket套利</li>
+                            <li>✅ 加密市场日报</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>💰 推广返佣自动化</h3>
+                        <p><strong>月收入潜力: $300-800</strong></p>
+                        <p>自动生成推广内容 → 挂返佣链接 → 自动发布 → 躺赚佣金</p>
+                        <ul style="margin-top: 15px; list-style: none;">
+                            <li>✅ GRVT交易所推广</li>
+                            <li>✅ CryptoDAO质押推广</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>🛍️ 电商套利监控</h3>
+                        <p><strong>月收入潜力: $200-500</strong></p>
+                        <p>监控闲鱼/得物低价商品 → 自动提醒 → 快速下单 → 转卖赚差价</p>
+                        <ul style="margin-top: 15px; list-style: none;">
+                            <li>✅ 闲鱼CCD相机监控</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="pricing" style="margin-top: 80px;">
+                <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">💎 两个版本，按需选择</h2>
+                
+                <div class="pricing">
+                    <div class="price-card">
+                        <h3 style="font-size: 2em;">🥉 基础版</h3>
+                        <div class="price">$97</div>
+                        <ul>
+                            <li>✅ 8个核心脚本</li>
+                            <li>✅ 信息差套利（4个）</li>
+                            <li>✅ 内容搬运（2个）</li>
+                            <li>✅ 加密监控（2个）</li>
+                            <li>✅ 完整部署文档</li>
+                            <li>✅ 配置模板</li>
+                            <li>✅ 终身免费更新</li>
+                            <li>✅ 邮件技术支持</li>
+                        </ul>
+                        <p style="margin-top: 20px;"><strong>月收入潜力: $500-1000</strong></p>
+                        <a href="https://t.me/daojie_support" class="btn btn-secondary" style="margin-top: 20px;">联系购买</a>
+                    </div>
+                    
+                    <div class="price-card featured">
+                        <div style="background: rgba(255,255,255,0.2); padding: 10px; border-radius: 10px; margin-bottom: 20px;">
+                            <strong>🔥 推荐</strong>
+                        </div>
+                        <h3 style="font-size: 2em;">🏆 Pro版</h3>
+                        <div class="price">$297</div>
+                        <ul>
+                            <li>✅ <strong>全部15个脚本</strong></li>
+                            <li>✅ 所有赚钱渠道</li>
+                            <li>✅ 完整部署文档</li>
+                            <li>✅ 配置模板</li>
+                            <li>✅ 终身免费更新</li>
+                            <li>✅ <strong>优先技术支持</strong></li>
+                            <li>✅ <strong>1对1部署指导</strong></li>
+                            <li>✅ <strong>定制化脚本服务</strong></li>
+                            <li>✅ <strong>私密社群</strong></li>
+                            <li>✅ 价值$99加密课程</li>
+                            <li>✅ 返佣链接矩阵</li>
+                            <li>✅ 每月赚钱报告</li>
+                        </ul>
+                        <p style="margin-top: 20px;"><strong>月收入潜力: $2000-5000</strong></p>
+                        <a href="https://t.me/daojie_support" class="btn btn-primary" style="margin-top: 20px; background: white; color: #667eea;">立即购买 Pro版</a>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="guarantee">
+                <h2>🛡️ 30天无理由退款保证</h2>
+                <p style="font-size: 1.2em; margin-top: 20px;">
+                    如果你按照教程部署后，系统无法正常运行，我们承诺全额退款。<br>
+                    零风险尝试，让你放心购买。
+                </p>
+            </div>
+            
+            <section class="testimonials">
+                <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">💬 用户评价</h2>
+                
+                <div class="testimonial">
+                    <p style="font-size: 1.1em;">⭐⭐⭐⭐⭐</p>
+                    <p>"作为一个程序员，我一直想做副业但没时间。这个系统让我实现了自动化赚钱，现在每月多赚$1500+，完全不影响主业。"</p>
+                    <p class="author">— 张三，程序员</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p style="font-size: 1.1em;">⭐⭐⭐⭐⭐</p>
+                    <p>"我是0编程基础，按照教程部署后，第一个月就赚了$600+。现在已经运行3个月了，月收入稳定在$2000+。"</p>
+                    <p class="author">— 李四，自由职业者</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p style="font-size: 1.1em;">⭐⭐⭐⭐⭐</p>
+                    <p>"Meme监控太强了！帮我抓住了好几个10x的机会，已经回本10倍了。"</p>
+                    <p class="author">— 王五，加密投资者</p>
+                </div>
+            </section>
+            
+            <section style="text-align: center; margin: 60px 0;">
+                <h2 style="font-size: 2.5em; margin-bottom: 30px;">🚀 立即开始</h2>
+                <p style="font-size: 1.3em; margin-bottom: 40px;">
+                    加入已经在使用AI自动赚钱系统的用户行列<br>
+                    开始你的被动收入之旅
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/daojie_support" class="btn btn-primary">联系购买 💰</a>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+                📧 邮箱: support@dao-jie.shop<br>
+                💬 Telegram: @daojie_support<br>
+                🌐 官网: dao-jie.shop
+            </p>
+            <p style="margin-top: 30px; opacity: 0.8;">
+                Built 15 AI money-making bots. Now earning $3000+/month on autopilot 💰<br>
+                No code. No inventory. No shipping. Pure automation.<br>
+                Set it once, earn forever.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
