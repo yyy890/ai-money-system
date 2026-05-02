@@ -1,0 +1,117 @@
+{
+  "product_name": "AI自动赚钱系统",
+  "version": "2.0.0",
+  "created": "2026-05-02",
+  "total_scripts": 15,
+  "pricing": {
+    "basic": {
+      "price": 97,
+      "currency": "USD",
+      "scripts_included": 8,
+      "features": [
+        "8个核心脚本",
+        "信息差套利（4个）",
+        "内容搬运（2个）",
+        "加密监控（2个）",
+        "完整部署文档",
+        "配置模板",
+        "终身免费更新",
+        "邮件技术支持"
+      ]
+    },
+    "pro": {
+      "price": 297,
+      "currency": "USD",
+      "scripts_included": 15,
+      "features": [
+        "全部15个脚本",
+        "所有赚钱渠道",
+        "完整部署文档",
+        "配置模板",
+        "终身免费更新",
+        "优先技术支持",
+        "1对1部署指导（视频通话）",
+        "定制化脚本服务（1次）",
+        "私密社群（交流变现经验）",
+        "价值$99的加密货币投资课程",
+        "个人返佣链接矩阵",
+        "每月赚钱机会报告"
+      ]
+    }
+  },
+  "scripts": {
+    "info_arbitrage": [
+      "content_arbitrage.py",
+      "twitter_reddit_arbitrage.py",
+      "producthunt_jike.py",
+      "github_juejin.py"
+    ],
+    "content_repurpose": [
+      "youtube_bilibili.py",
+      "tiktok_crypto_content.py",
+      "grvt_content_arbitrage.py"
+    ],
+    "crypto_monitoring": [
+      "meme_monitor.py",
+      "gmgn_smart_money.py",
+      "crypto_market_monitor.py",
+      "airdrop_monitor.py",
+      "polymarket_monitor.py"
+    ],
+    "referral_promotion": [
+      "grvt_promo.py",
+      "crypto_referral.py"
+    ],
+    "ecommerce_arbitrage": [
+      "xianyu_ccd_monitor.py"
+    ]
+  },
+  "revenue_channels": [
+    {
+      "name": "信息差套利",
+      "monthly_potential": "$500-1500",
+      "scripts": 4,
+      "description": "国外爆火内容 → AI翻译 → 中文平台分发"
+    },
+    {
+      "name": "内容搬运变现",
+      "monthly_potential": "$800-2000",
+      "scripts": 3,
+      "description": "YouTube视频 → 自动配音+字幕 → B站发布"
+    },
+    {
+      "name": "加密货币监控",
+      "monthly_potential": "$1000-3000",
+      "scripts": 5,
+      "description": "Meme币异动、聪明钱追踪、空投监控"
+    },
+    {
+      "name": "推广返佣自动化",
+      "monthly_potential": "$300-800",
+      "scripts": 2,
+      "description": "自动生成推广内容+返佣链接"
+    },
+    {
+      "name": "电商套利监控",
+      "monthly_potential": "$200-500",
+      "scripts": 1,
+      "description": "闲鱼低价商品自动提醒"
+    }
+  ],
+  "requirements": {
+    "system": "macOS / Linux / Windows (WSL)",
+    "vps": "Optional, $5/month for 24/7 operation",
+    "api_cost": "~$10-20/month (DeepSeek or similar)",
+    "proxy": "Required for accessing Google/OpenAI",
+    "telegram": "Required for receiving notifications"
+  },
+  "support": {
+    "email": "support@dao-jie.shop",
+    "telegram": "@daojie_support",
+    "website": "https://dao-jie.shop"
+  },
+  "guarantee": {
+    "refund_period": "30 days",
+    "condition": "System fails to run after following deployment guide"
+  }
+}
